@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import wan from "../../images/wan.jpg";
+import "./Project.css";
 
 const ProjetsWild = () => {
   return (
