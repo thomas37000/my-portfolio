@@ -15,7 +15,7 @@ const Header = () => {
             <Nav>
               <Nav.Link href="#ancre-présentation">Présentation</Nav.Link>
               <Nav.Link href="#ancre-skills">Skills</Nav.Link>
-              <Nav.Link href="#ancre-projes">Projets</Nav.Link>
+              <Nav.Link href="#ancre-projets">Projets</Nav.Link>
               <Nav.Link href="#ancre-contact">Contact</Nav.Link>
               <Nav.Link eventKey={2} href="#ancre-cv">
                 Cv

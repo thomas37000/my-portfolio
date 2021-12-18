@@ -18,7 +18,7 @@ const ProjetsPerso = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          twitter-post
+          Demo Link
         </a>
         <a
           className="project-link"
@@ -40,7 +40,7 @@ const ProjetsPerso = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          SPA
+           Demo Link
         </a>
         <a
           className="project-link"
