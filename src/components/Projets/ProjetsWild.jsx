@@ -21,7 +21,7 @@ const ProjetsWild = () => {
     projects.map((project) => {
       return <CardProject key={project.id} {...project} />;
     });
-    
+
   return (
     <section>
       Mes travaux à la <h2> Wild Code School</h2>

@@ -122,6 +122,32 @@
       "text": "dark"
     }
   ],
+  "backend": [
+    {
+      "id": 1,
+      "tool": "Node Js",
+      "bg": "success",
+      "text": null
+    },
+    {
+      "id": 2,
+      "tool": "MySQL Workbench",
+      "bg": "secondary",
+      "text": null
+    },
+    {
+      "id": 3,
+      "tool": "Postman",
+      "bg": "danger",
+      "text": null
+    },
+    {
+      "id": 4,
+      "tool": "Express",
+      "bg": "warning",
+      "text": "dark"
+    }
+  ],
   "skills": [
     {
       "id": 1,

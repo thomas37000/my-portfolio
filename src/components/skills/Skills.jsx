@@ -3,12 +3,13 @@ import { Badge } from "react-bootstrap";
 import frontend from "../../images/front.png";
 import scrum from "../../images/scrum.png";
 import sql from "../../images/sql.jpg";
-import CardSkills from "../Card/CardSkills";
+import { CardBackend, CardSkills, CardTools } from "../Card/CardSkills";
 import "./Skills.css";
 
 const Skills = () => {
   const [skills, setSkills] = useState([]);
   const [tools, setTools] = useState([]);
+  const [back, setBack] = useState([]);
 
   useEffect(() => {
     fetch(
@@ -18,8 +19,10 @@ const Skills = () => {
       .then((data) => {
         console.log("skills", data.skills);
         console.log("tools", data.devTools);
+        console.log("tools backend", data.backend);
         setSkills(data.skills);
         setTools(data.devTools);
+        setBack(data.backend);
       });
   }, []);
 
@@ -32,7 +35,13 @@ const Skills = () => {
   const fetchJsonTools =
     tools &&
     tools.map((tool) => {
-      return <CardSkills key={tool.id} {...tool} />;
+      return <CardTools key={tool.id} {...tool} />;
+    });
+
+  const fetchJsonToolsBackend =
+    back &&
+    back.map((tool) => {
+      return <CardBackend key={tool.id} {...tool} />;
     });
 
   return (
@@ -180,12 +189,8 @@ const Skills = () => {
             </p>
             <h2 className="pink-text">les technos que j'utlise:</h2>
             <p>MySQl</p>
-            <h2 className="pink-text">Dev Tools:</h2>
-            <div>
-              <Badge bg="success">Node Js</Badge>{" "}
-              <Badge bg="secondary">MySQL Workbench</Badge>{" "}
-              <Badge bg="danger">Postman</Badge>{" "}
-            </div>
+            <h2 className="pink-text">Dev Backend Tools:</h2>
+            <div>{fetchJsonToolsBackend}</div>
           </figure>
         </div>
         <div className="column">
