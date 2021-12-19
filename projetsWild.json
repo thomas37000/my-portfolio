@@ -93,32 +93,52 @@
     },
     {
       "id": 6,
-      "tool": "Bootsrap / React-Bootstrap",
-      "bg": "warning",
-      "text": "dark"
-    },
-    {
-      "id": 7,
       "tool": "Codesandbox",
       "bg": "dark",
       "text": null
     },
     {
-      "id": 8,
+      "id": 7,
       "tool": "Codepen",
       "bg": "dark",
       "text": null
     },
     {
-      "id": 9,
+      "id": 8,
       "tool": "Repli.it",
       "bg": "dark",
       "text": null
     },
     {
-      "id": 10,
+      "id": 9,
       "tool": "Wordpress",
       "bg": "light",
+      "text": "dark"
+    }
+  ],
+    "backend": [
+    {
+      "id": 1,
+      "tool": "Node Js",
+      "bg": "success",
+      "text": null
+    },
+    {
+      "id": 2,
+      "tool": "MySQL Workbench",
+      "bg": "secondary",
+      "text": null
+    },
+    {
+      "id": 3,
+      "tool": "Postman",
+      "bg": "danger",
+      "text": null
+    },
+    {
+      "id": 4,
+      "tool": "Express",
+      "bg": "warning",
       "text": "dark"
     }
   ],
@@ -146,6 +166,62 @@
       "tool": "Express",
       "bg": "warning",
       "text": "dark"
+    }
+  ],
+  "frontend": [
+    {
+      "id": 1,
+      "tool": "Html",
+      "bg": "success",
+      "text": null
+    },
+    {
+      "id": 2,
+      "tool": "Css",
+      "bg": "secondary",
+      "text": null
+    },
+    {
+      "id": 3,
+      "tool": "Javascript",
+      "bg": "danger",
+      "text": null
+    },
+    {
+      "id": 4,
+      "tool": "Typescript",
+      "bg": "warning",
+      "text": "dark"
+    },
+    {
+      "id": 5,
+      "tool": "React",
+      "bg": "warning",
+      "text": "dark"
+    },
+    {
+      "id": 6,
+      "tool": "Bootsrap / React-Bootstrap",
+      "bg": "warning",
+      "text": "dark"
+    },
+    {
+      "id": 7,
+      "tool": "Styled Components",
+      "bg": "info",
+      "text": null
+    },
+    {
+      "id": 8,
+      "tool": "Saas",
+      "bg": "dark",
+      "text": null
+    },
+    {
+      "id": 9,
+      "tool": "Pug",
+      "bg": "secondary",
+      "text": null
     }
   ],
   "skills": [

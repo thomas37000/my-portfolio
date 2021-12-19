@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { api } from "../../api/api";
 import CardProject from "../Card/CardProject";
 import "./Project.css";
 
@@ -6,12 +7,9 @@ const ProjetsWild = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch(
-      "https://raw.githubusercontent.com/thomas37000/my-portfolio/main/projetsWild.json"
-    )
+    fetch(api)
       .then((res) => res.json())
       .then((data) => {
-        console.log("wild projects", data.wild);
         setProjects(data.wild);
       });
   }, []);
