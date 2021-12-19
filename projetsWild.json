@@ -1,0 +1,151 @@
+{
+  "wild": [
+    {
+      "id": 1,
+      "title": "île de Nantes",
+      "project": "Projet 1",
+      "fini": null,
+      "description": "Création d' un site en Html / Css / Js en équipe.",
+      "link": "https://thomas37000.github.io/ileDeNantes/",
+      "github": "https://github.com/thomas37000/ileDeNantes",
+      "image": "https://www.hotel-nantes.fr/usermedia/photo-634831159348225405-1.JPG?w=412&h=365&Crop=true"
+    },
+    {
+      "id": 2,
+      "title": "Nantes Event's",
+      "project": "Projet 2",
+      "fini": null,
+      "description": "Création d' un site sur React en équipe du type application qui permet de voir quels événements ont lieu selon la date. Nous avons importer l'Api des événements de Nantes pour récupérer les données et les afficher.",
+      "link": "https://nantes-events.netlify.app/",
+      "github": "https://github.com/thomas37000/Nantes-Events",
+      "image": "https://nantes-events.netlify.app/static/media/logo-nantes-event.b4db1e07.png"
+    },
+    {
+      "id": 3,
+      "title": "Women@Nantes",
+      "project": "Projet 3",
+      "fini": "non terminé",
+      "description": "Création d' une application pour l' association Women@Nantes, en équipe. En Front-end et Back-end.",
+      "link": null,
+      "github": "https://github.com/WildCodeSchool/nts-js-202009-p3-frontend-wan",
+      "image": "https://github.com/WildCodeSchool/nts-js-202009-p3-frontend-wanraw.githubusercontent.com/thomas37000/my-portfolio/main/src/images/wan.jpg"
+    }
+  ],
+  "perso": [
+    {
+      "id": 2,
+      "title": "The Space Protection Alien (SPA)",
+      "fini": null,
+      "description": "The Space Protection Alien (SPA) API Création d' une application sur React dy type site de rencontre en récupérant l' Api The Space Protection Alien.",
+      "link": "https://codesandbox.io/s/spa-e77cb",
+      "github": "https://github.com/thomas37000/ufo/tree/main/ufo",
+      "image": "https://raw.githubusercontent.com/thomas37000/my-portfolio/main/src/images/spa.png"
+    },
+    {
+      "id": 3,
+      "title": "Twitter Posts",
+      "fini": null,
+      "description": " Création d' une application sur React pour récupérer les posts venant de l' Api Twitter. Par exemple ici je récupère tous les posts avec le hashtag #bordercollie Possibilité de changer les paramètres type couleur background / Typographie / nombre de posts dans la sidebar",
+      "link": "https://twitter-posts.netlify.app/",
+      "github": "https://github.com/thomas37000/SynApi",
+      "image": "https://raw.githubusercontent.com/thomas37000/my-portfolio/main/src/images/twitter%20posts.png"
+    },
+    {
+      "id": 4,
+      "title": "Redux Movie app",
+      "fini": "en cours de développement",
+      "description": "faire une application de type films streaming avec React Redux",
+      "link": "https://movie-list-with-pagination.netlify.app/",
+      "github": "https://github.com/thomas37000/react-interview",
+      "image": "https://raw.githubusercontent.com/thomas37000/my-portfolio/main/src/images/pagination.png"
+    }
+  ],
+  "devTools": [
+    {
+      "id": 1,
+      "tool-name": "Vs Code",
+      "bg": "primary",
+      "text": null
+    },
+    {
+      "id": 2,
+      "tool-name": "Github / Git",
+      "bg": "primary",
+      "text": null
+    },
+    {
+      "id": 3,
+      "tool-name": "Gitlab",
+      "bg": "secondary",
+      "text": null
+    },
+    {
+      "id": 4,
+      "tool-name": "Terminal",
+      "bg": "danger",
+      "text": null
+    },
+    {
+      "id": 5,
+      "tool-name": "Npm",
+      "bg": "danger",
+      "text": null
+    },
+    {
+      "id": 6,
+      "tool-name": "Bootsrap / React-Bootstrap",
+      "bg": "warning",
+      "text": "dark"
+    },
+    {
+      "id": 7,
+      "tool-name": "Codesandbox",
+      "bg": "dark",
+      "text": null
+    },
+    {
+      "id": 8,
+      "tool-name": "Codepen",
+      "bg": "dark",
+      "text": null
+    },
+    {
+      "id": 9,
+      "tool-name": "Repli.it",
+      "bg": "dark",
+      "text": null
+    },
+    {
+      "id": 10,
+      "tool-name": "Wordpress",
+      "bg": "light",
+      "text": "dark"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "skill-name": "passioné"
+    },
+    {
+      "id": 2,
+      "skill-name": "curieux"
+    },
+    {
+      "id": 3,
+      "skill-name": "empathique"
+    },
+    {
+      "id": 4,
+      "skill-name": "persévérant"
+    },
+    {
+      "id": 5,
+      "skill-name": "patient"
+    },
+    {
+      "id": 6,
+      "skill-name": "flexible"
+    }
+  ]
+}
