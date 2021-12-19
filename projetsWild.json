@@ -116,32 +116,6 @@
       "text": "dark"
     }
   ],
-    "backend": [
-    {
-      "id": 1,
-      "tool": "Node Js",
-      "bg": "success",
-      "text": null
-    },
-    {
-      "id": 2,
-      "tool": "MySQL Workbench",
-      "bg": "secondary",
-      "text": null
-    },
-    {
-      "id": 3,
-      "tool": "Postman",
-      "bg": "danger",
-      "text": null
-    },
-    {
-      "id": 4,
-      "tool": "Express",
-      "bg": "warning",
-      "text": "dark"
-    }
-  ],
   "backend": [
     {
       "id": 1,
@@ -151,18 +125,24 @@
     },
     {
       "id": 2,
+      "tool": "MySQL",
+      "bg": "dark",
+      "text": null
+    },
+    {
+      "id": 3,
       "tool": "MySQL Workbench",
       "bg": "secondary",
       "text": null
     },
     {
-      "id": 3,
+      "id": 4,
       "tool": "Postman",
       "bg": "danger",
       "text": null
     },
     {
-      "id": 4,
+      "id": 5,
       "tool": "Express",
       "bg": "warning",
       "text": "dark"
@@ -184,7 +164,7 @@
     {
       "id": 3,
       "tool": "Javascript",
-      "bg": "danger",
+      "bg": "warning",
       "text": null
     },
     {
@@ -196,20 +176,20 @@
     {
       "id": 5,
       "tool": "React",
-      "bg": "warning",
-      "text": "dark"
+      "bg": "info",
+      "text": null
     },
     {
       "id": 6,
       "tool": "Bootsrap / React-Bootstrap",
-      "bg": "warning",
-      "text": "dark"
+      "bg": "primary",
+      "text": null
     },
     {
       "id": 7,
       "tool": "Styled Components",
-      "bg": "info",
-      "text": null
+      "bg": "light",
+      "text": "dark"
     },
     {
       "id": 8,

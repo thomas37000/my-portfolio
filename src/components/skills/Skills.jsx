@@ -21,7 +21,7 @@ const Skills = () => {
         setTools(data.devTools);
         setBack(data.backend);
         setAgile(data.scrum);
-        setFront(data.front);
+        setFront(data.frontend);
       });
   }, []);
 
@@ -68,8 +68,9 @@ const Skills = () => {
             <h2>Front-end Développeur</h2>
             <p>J'aime coder, apprendre et partager mon travail.</p>
             <h2 className="pink-text">les technos que j'utilise:</h2>
-            <h2 className="pink-text">Dev Fronend Tools:</h2>
+            <h2 className="pink-text">Dev Frontend Tools:</h2>
             <div>{fetchJsonToolsFrontend}</div>
+            <h2 className="pink-text">Dev Editors:</h2>
             <div>{fetchJsonTools}</div>
           </figure>
         </div>
@@ -81,7 +82,6 @@ const Skills = () => {
               J'aime créer des requêtes SQL et relier les tables entre elles.
             </p>
             <h2 className="pink-text">les technos que j'utlise:</h2>
-            <p>MySQl</p>
             <h2 className="pink-text">Dev Backend Tools:</h2>
             <div>{fetchJsonToolsBackend}</div>
           </figure>
