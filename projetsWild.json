@@ -28,7 +28,7 @@
       "description": "Création d' une application pour l' association Women@Nantes, en équipe. En Front-end et Back-end.",
       "link": null,
       "github": "https://github.com/WildCodeSchool/nts-js-202009-p3-frontend-wan",
-      "image": "raw.githubusercontent.com/thomas37000/my-portfolio/main/src/images/wan.jpg"
+      "image": "https://raw.githubusercontent.com/thomas37000/my-portfolio/main/src/images/wan.jpg"
     }
   ],
   "perso": [
@@ -63,61 +63,61 @@
   "devTools": [
     {
       "id": 1,
-      "tool-name": "Vs Code",
+      "tool": "Vs Code",
       "bg": "primary",
       "text": null
     },
     {
       "id": 2,
-      "tool-name": "Github / Git",
+      "tool": "Github / Git",
       "bg": "primary",
       "text": null
     },
     {
       "id": 3,
-      "tool-name": "Gitlab",
+      "tool": "Gitlab",
       "bg": "secondary",
       "text": null
     },
     {
       "id": 4,
-      "tool-name": "Terminal",
+      "tool": "Terminal",
       "bg": "danger",
       "text": null
     },
     {
       "id": 5,
-      "tool-name": "Npm",
+      "tool": "Npm",
       "bg": "danger",
       "text": null
     },
     {
       "id": 6,
-      "tool-name": "Bootsrap / React-Bootstrap",
+      "tool": "Bootsrap / React-Bootstrap",
       "bg": "warning",
       "text": "dark"
     },
     {
       "id": 7,
-      "tool-name": "Codesandbox",
+      "tool": "Codesandbox",
       "bg": "dark",
       "text": null
     },
     {
       "id": 8,
-      "tool-name": "Codepen",
+      "tool": "Codepen",
       "bg": "dark",
       "text": null
     },
     {
       "id": 9,
-      "tool-name": "Repli.it",
+      "tool": "Repli.it",
       "bg": "dark",
       "text": null
     },
     {
       "id": 10,
-      "tool-name": "Wordpress",
+      "tool": "Wordpress",
       "bg": "light",
       "text": "dark"
     }
@@ -125,27 +125,27 @@
   "skills": [
     {
       "id": 1,
-      "skill-name": "passioné"
+      "skill": "passioné"
     },
     {
       "id": 2,
-      "skill-name": "curieux"
+      "skill": "curieux"
     },
     {
       "id": 3,
-      "skill-name": "empathique"
+      "skill": "empathique"
     },
     {
       "id": 4,
-      "skill-name": "persévérant"
+      "skill": "persévérant"
     },
     {
       "id": 5,
-      "skill-name": "patient"
+      "skill": "patient"
     },
     {
       "id": 6,
-      "skill-name": "flexible"
+      "skill": "flexible"
     }
   ]
 }

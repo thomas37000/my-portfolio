@@ -12,6 +12,7 @@ const ProjetsPerso = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log("perso projects", data.perso);
+        console.log(data);
         setProjects(data.perso);
       });
   }, []);
@@ -21,6 +22,7 @@ const ProjetsPerso = () => {
     projects.map((project, index) => {
       return <CardProject key={project.id} {...project} />;
     });
+
   return (
     <section>
       <h2>Mes travaux personnels</h2>

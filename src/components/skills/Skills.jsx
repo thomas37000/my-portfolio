@@ -1,11 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Badge } from "react-bootstrap";
 import frontend from "../../images/front.png";
 import scrum from "../../images/scrum.png";
 import sql from "../../images/sql.jpg";
+import CardSkills from "../Card/CardSkills";
 import "./Skills.css";
 
 const Skills = () => {
+  const [skills, setSkills] = useState([]);
+  const [tools, setTools] = useState([]);
+
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/thomas37000/my-portfolio/main/projetsWild.json"
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("skills", data.skills);
+        console.log("tools", data.devTools);
+        setSkills(data.skills);
+        setTools(data.devTools);
+      });
+  }, []);
+
+  const fetchJsonSkills =
+    skills &&
+    skills.map((skill) => {
+      return <CardSkills key={skill.id} {...skill} />;
+    });
+
+  const fetchJsonTools =
+    tools &&
+    tools.map((tool) => {
+      return <CardSkills key={tool.id} {...tool} />;
+    });
+
   return (
     <>
       <section>
@@ -139,20 +168,7 @@ const Skills = () => {
               </a>
             </p>
             <h2 className="pink-text">Dev Tools:</h2>
-            <div>
-              <Badge bg="primary">Vs Code</Badge>{" "}
-              <Badge bg="primary">Github</Badge>{" "}
-              <Badge bg="secondary">Gitlab</Badge>{" "}
-              <Badge bg="danger">terminal</Badge> <Badge bg="danger">Npm</Badge>{" "}
-              <Badge bg="warning" text="dark">
-                Bootsrap / React-Bootsrap /ReactStrap
-              </Badge>{" "}
-              <Badge bg="dark">Codesanbox</Badge>{" "}
-              <Badge bg="dark">Codepen</Badge> <Badge bg="dark">Repl.it</Badge>{" "}
-              <Badge bg="light" text="dark">
-                Wordpress
-              </Badge>
-            </div>
+            <div>{fetchJsonTools}</div>
           </figure>
         </div>
         <div className="column">
@@ -188,6 +204,10 @@ const Skills = () => {
               <Badge bg="warning" text="dark">
                 User Stories
               </Badge>{" "}
+            </div>
+            <div>
+              <h2>Soft Skills</h2>
+              {fetchJsonSkills}
             </div>
           </figure>
         </div>
