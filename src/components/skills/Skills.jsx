@@ -9,8 +9,8 @@ const Skills = () => {
   return (
     <>
       <section>
-        <div class="column">
-          <figure class="skill">
+        <div className="column">
+          <figure className="skill">
             <img
               src="https://monsieurecommerce.com/wp-content/uploads/2017/06/open-position-frontend-developer-dribbble-2-preview.png"
               alt="frontend"
@@ -18,7 +18,7 @@ const Skills = () => {
             />
             <h2>Front-end Développeur</h2>
             <p>J'aime coder, apprendre et partager mon travail.</p>
-            <h2 class="pink-text">les technos que j'utilise:</h2>
+            <h2 className="pink-text">les technos que j'utilise:</h2>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
               target="_blank"
@@ -138,7 +138,7 @@ const Skills = () => {
                 />{" "}
               </a>
             </p>
-            <h2 class="pink-text">Dev Tools:</h2>
+            <h2 className="pink-text">Dev Tools:</h2>
             <div>
               <Badge bg="primary">Vs Code</Badge>{" "}
               <Badge bg="primary">Github</Badge>{" "}
@@ -155,16 +155,16 @@ const Skills = () => {
             </div>
           </figure>
         </div>
-        <div class="column">
-          <figure class="skill">
+        <div className="column">
+          <figure className="skill">
             <img src={sql} alt="backend" className="skills-img" />
             <h2>Back-end Développeur</h2>
             <p>
               J'aime créer des requêtes SQL et relier les tables entre elles.
             </p>
-            <h2 class="pink-text">les technos que j'utlise:</h2>
+            <h2 className="pink-text">les technos que j'utlise:</h2>
             <p>MySQl</p>
-            <h2 class="pink-text">Dev Tools:</h2>
+            <h2 className="pink-text">Dev Tools:</h2>
             <div>
               <Badge bg="success">Node Js</Badge>{" "}
               <Badge bg="secondary">MySQL Workbench</Badge>{" "}
@@ -172,8 +172,8 @@ const Skills = () => {
             </div>
           </figure>
         </div>
-        <div class="column">
-          <figure class="skill">
+        <div className="column">
+          <figure className="skill">
             <img src={scrum} alt="frontend" className="skills-img" />
             <h2>SCRUM</h2>
             <p>

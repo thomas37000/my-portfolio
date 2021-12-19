@@ -28,7 +28,7 @@
       "description": "Création d' une application pour l' association Women@Nantes, en équipe. En Front-end et Back-end.",
       "link": null,
       "github": "https://github.com/WildCodeSchool/nts-js-202009-p3-frontend-wan",
-      "image": "https://github.com/WildCodeSchool/nts-js-202009-p3-frontend-wanraw.githubusercontent.com/thomas37000/my-portfolio/main/src/images/wan.jpg"
+      "image": "raw.githubusercontent.com/thomas37000/my-portfolio/main/src/images/wan.jpg"
     }
   ],
   "perso": [
@@ -54,7 +54,7 @@
       "id": 4,
       "title": "Redux Movie app",
       "fini": "en cours de développement",
-      "description": "faire une application de type films streaming avec React Redux",
+      "description": "Récupération d' une liste de films avec le module react-paginate pour n'avoir que 3 films affichés et non toute une liste et Redux",
       "link": "https://movie-list-with-pagination.netlify.app/",
       "github": "https://github.com/thomas37000/react-interview",
       "image": "https://raw.githubusercontent.com/thomas37000/my-portfolio/main/src/images/pagination.png"
