@@ -3,13 +3,14 @@ import { Badge } from "react-bootstrap";
 import frontend from "../../images/front.png";
 import scrum from "../../images/scrum.png";
 import sql from "../../images/sql.jpg";
-import { CardBackend, CardSkills, CardTools } from "../Card/CardSkills";
+import { CardSkills, CardTools } from "../Card/CardSkills";
 import "./Skills.css";
 
 const Skills = () => {
   const [skills, setSkills] = useState([]);
   const [tools, setTools] = useState([]);
   const [back, setBack] = useState([]);
+  const [agile, setAgile] = useState([]);
 
   useEffect(() => {
     fetch(
@@ -17,12 +18,10 @@ const Skills = () => {
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log("skills", data.skills);
-        console.log("tools", data.devTools);
-        console.log("tools backend", data.backend);
         setSkills(data.skills);
         setTools(data.devTools);
         setBack(data.backend);
+        setAgile(data.scrum);
       });
   }, []);
 
@@ -41,7 +40,13 @@ const Skills = () => {
   const fetchJsonToolsBackend =
     back &&
     back.map((tool) => {
-      return <CardBackend key={tool.id} {...tool} />;
+      return <CardTools key={tool.id} {...tool} />;
+    });
+
+  const fetchJsonScrum =
+    agile &&
+    agile.map((tool) => {
+      return <CardTools key={tool.id} {...tool} />;
     });
 
   return (
@@ -202,14 +207,7 @@ const Skills = () => {
               équipe.
             </p>
 
-            <div>
-              <Badge bg="primary">Agile</Badge>{" "}
-              <Badge bg="primary">Scrum</Badge>{" "}
-              <Badge bg="success">Sprint</Badge>{" "}
-              <Badge bg="warning" text="dark">
-                User Stories
-              </Badge>{" "}
-            </div>
+            <div>{fetchJsonScrum}</div>
             <div>
               <h2>Soft Skills</h2>
               {fetchJsonSkills}

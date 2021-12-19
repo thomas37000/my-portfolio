@@ -22,15 +22,15 @@ export const CardTools = ({ bg, text, tool }) => {
   );
 };
 
-export const CardBackend = ({ bg, text, tool }) => {
-    return (
-      <div>
-        <Badge bg={bg} text={text}>
-          {tool}
-        </Badge>
-      </div>
-    );
-  };
+// export const CardBackend = ({ bg, text, tool }) => {
+//     return (
+//       <div>
+//         <Badge bg={bg} text={text}>
+//           {tool}
+//         </Badge>
+//       </div>
+//     );
+//   };
 
 CardSkills.propTypes = {
   skill: PropTypes.string.isRequired,
@@ -42,8 +42,8 @@ CardTools.propTypes = {
   tool: PropTypes.string.isRequired,
 };
 
-CardBackend.propTypes = {
-    bg: PropTypes.string.isRequired,
-    text: PropTypes.string,
-    tool: PropTypes.string.isRequired,
-  };
+// CardBackend.propTypes = {
+//     bg: PropTypes.string.isRequired,
+//     text: PropTypes.string,
+//     tool: PropTypes.string.isRequired,
+//   };

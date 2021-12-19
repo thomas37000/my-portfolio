@@ -173,5 +173,31 @@
       "id": 6,
       "skill": "flexible"
     }
+  ],
+  "scrum": [
+    {
+      "id": 1,
+      "tool": "Agile",
+      "bg": "primary",
+      "text": null
+    },
+    {
+      "id": 2,
+      "tool": "Scrum",
+      "bg": "primary",
+      "text": null
+    },
+    {
+      "id": 3,
+      "tool": "Sprint",
+      "bg": "success",
+      "text": null
+    },
+    {
+      "id": 4,
+      "tool": "User Stories",
+      "bg": "warning",
+      "text": "dark"
+    }
   ]
 }
