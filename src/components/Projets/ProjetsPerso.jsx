@@ -25,7 +25,7 @@ const ProjetsPerso = () => {
     <section>
       <h2>Mes travaux personnels</h2>
       <div>Voici différents projets que j' ai réalisé dernièrement</div>
-      {fetchJsonProjects}
+      <div className="projets">{fetchJsonProjects}</div>
     </section>
   );
 };

@@ -1,7 +1,26 @@
 .btn-primary {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .project-link {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.projets,
+.projets-wild {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 950px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 768px) and (max-width: 1024px) {
+  .projets,
+  .projets-wild {
+    display: grid;
+    width: auto;
+  }
 }

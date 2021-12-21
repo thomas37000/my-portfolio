@@ -14,38 +14,43 @@ const CardProject = ({
 }) => {
   return (
     <>
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={image} />
-        <Card.Body>
-          <Card.Title>{title}</Card.Title>
-          <Card.Text>
-            {/* faire un ternaire fini ou pas */}
-            <Badge bg="danger">{fini}</Badge>
-            <Badge bg="dark">{project}</Badge>
-            {description}
-          </Card.Text>
-          <Button variant="primary">
-            <a
-              className="project-link"
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Demo Link
-            </a>
-          </Button>
-          <Button variant="primary">
-            <a
-              className="project-link"
-              href={github}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>
-          </Button>
-        </Card.Body>
-      </Card>
+      <div className="card-container">
+        <Card style={{ width: "18rem" }}>
+          <div className="container-img">
+            <Card.Img variant="top" src={image} className="card__img" />
+          </div>
+
+          <Card.Body className="card__info">
+            <Card.Title>{title}</Card.Title>
+            <Card.Text>
+              {/* faire un ternaire fini ou pas */}
+              <Badge bg="danger">{fini}</Badge>
+              <Badge bg="dark">{project}</Badge>
+            </Card.Text>
+            <Card.Text>{description}</Card.Text>
+            <Button variant="primary">
+              <a
+                className="project-link"
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Demo Link
+              </a>
+            </Button>
+            <Button variant="primary">
+              <a
+                className="project-link"
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </Button>
+          </Card.Body>
+        </Card>
+      </div>
     </>
   );
 };
