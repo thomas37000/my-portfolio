@@ -69,9 +69,9 @@ const Skills = () => {
             <p>J'aime coder, apprendre et partager mon travail.</p>
             <h2 className="pink-text">les technos que j'utilise:</h2>
             <h2 className="pink-text">Dev Frontend Tools:</h2>
-            <div>{fetchJsonToolsFrontend}</div>
+            <div className="badges">{fetchJsonToolsFrontend}</div>
             <h2 className="pink-text">Dev Editors:</h2>
-            <div>{fetchJsonTools}</div>
+            <div className="badges">{fetchJsonTools}</div>
           </figure>
         </div>
         <div className="column">
@@ -83,7 +83,7 @@ const Skills = () => {
             </p>
             <h2 className="pink-text">les technos que j'utlise:</h2>
             <h2 className="pink-text">Dev Backend Tools:</h2>
-            <div>{fetchJsonToolsBackend}</div>
+            <div className="badges badges2">{fetchJsonToolsBackend}</div>
           </figure>
         </div>
         <div className="column">
@@ -95,10 +95,10 @@ const Skills = () => {
               équipe.
             </p>
 
-            <div>{fetchJsonScrum}</div>
+            <div className="badges badges2">{fetchJsonScrum}</div>
             <div>
               <h2>Soft Skills</h2>
-              {fetchJsonSkills}
+              <div className="badges badges2">{fetchJsonSkills}</div>
             </div>
           </figure>
         </div>
