@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { api } from "../../api/api";
-import frontend from "../../images/front.png";
 import scrum from "../../images/scrum.png";
 import sql from "../../images/sql.jpg";
 import { CardSkills, CardTools } from "../Card/CardSkills";
@@ -60,11 +59,6 @@ const Skills = () => {
       <section>
         <div className="column">
           <figure className="skill">
-            <img
-              src="https://monsieurecommerce.com/wp-content/uploads/2017/06/open-position-frontend-developer-dribbble-2-preview.png"
-              alt="frontend"
-              className="skills-img frontend"
-            />
             <h2>Front-end Développeur</h2>
             <p>J'aime coder, apprendre et partager mon travail.</p>
             <h2 className="pink-text">les technos que j'utilise:</h2>

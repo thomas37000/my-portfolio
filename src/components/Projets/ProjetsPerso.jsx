@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { api } from "../../api/api";
+import Card from "../Card/Card";
 import CardProject from "../Card/CardProject";
 import "./Project.css";
 
@@ -18,6 +19,7 @@ const ProjetsPerso = () => {
   const fetchJsonProjects =
     projects &&
     projects.map((project, index) => {
+      // return <Card key={project.id} {...project} />;
       return <CardProject key={project.id} {...project} />;
     });
 

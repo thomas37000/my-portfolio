@@ -28,7 +28,9 @@ const CardProject = ({
               <Badge bg="danger">{fini}</Badge>
               <Badge bg="dark">{project}</Badge>
             </Card.Text>
-            <Card.Text>{technos}</Card.Text>
+            <Card.Text>
+              <Badge bg="dark">{technos}</Badge>
+            </Card.Text>
             <Card.Text>{description}</Card.Text>
             <Button variant="primary">
               <a
