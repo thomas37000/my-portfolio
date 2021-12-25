@@ -3,6 +3,7 @@ import { api } from "../../api/api";
 import scrum from "../../images/scrum.png";
 import sql from "../../images/sql.jpg";
 import { CardSkills, CardTools } from "../Card/CardSkills";
+import Description from "../description/Description";
 import "./Skills.css";
 
 const Skills = () => {
@@ -60,11 +61,14 @@ const Skills = () => {
         <div className="column">
           <figure className="skill">
             <h2>Front-end Développeur</h2>
-            <p>J'aime coder, apprendre et partager mon travail.</p>
-            <h2 className="pink-text">les technos que j'utilise:</h2>
-            <h2 className="pink-text">Dev Frontend Tools:</h2>
+            <Description />
+            <div className="presentation">
+              <h3 className="pink-text">les technos que j'utilise:</h3>
+              <div>Dev Frontend Tools:</div>
+            </div>
+
             <div className="badges">{fetchJsonToolsFrontend}</div>
-            <h2 className="pink-text">Dev Editors:</h2>
+            <div className="pink-text">Dev Editors:</div>
             <div className="badges">{fetchJsonTools}</div>
           </figure>
         </div>
@@ -75,8 +79,11 @@ const Skills = () => {
             <p>
               J'aime créer des requêtes SQL et relier les tables entre elles.
             </p>
-            <h2 className="pink-text">les technos que j'utlise:</h2>
-            <h2 className="pink-text">Dev Backend Tools:</h2>
+            <h3 className="pink-text">les technos que j'utlise:</h3>
+            <div className="presentation">
+              <div className="pink-text">Dev Backend Tools:</div>
+            </div>
+            
             <div className="badges badges2">{fetchJsonToolsBackend}</div>
           </figure>
         </div>

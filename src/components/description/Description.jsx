@@ -1,8 +1,9 @@
 import React from "react";
+import './Description.css';
 
 const Description = () => {
   return (
-    <div>
+    <div className="desc">
       Développeur Web Front End Junior en Javascript / React j'apprends mon
       futur métier à coder proprement avec " esLint " et ce secteur me passionne
       car il faut constamment apprendre et ne pas se reposer sur ses lauriers. A
