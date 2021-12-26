@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { Badge, Button, Card } from "react-bootstrap";
 import { api } from "../../api/api";
-import Card from "../Card/Card";
 import CardProject from "../Card/CardProject";
 import "./Project.css";
 
@@ -16,18 +21,38 @@ const ProjetsPerso = () => {
       });
   }, []);
 
-  const fetchJsonProjects =
-    projects &&
-    projects.map((project, index) => {
-      // return <Card key={project.id} {...project} />;
-      return <CardProject key={project.id} {...project} />;
-    });
+  // const fetchJsonProjects =
+  //   projects &&
+  //   projects.map((project, index) => {
+  //     return <CardProject key={project.id} {...project} />;
+  //   });
 
   return (
     <section>
       <h2>Mes travaux personnels</h2>
       <div>Voici différents projets que j' ai réalisé dernièrement</div>
-      <div className="projets">{fetchJsonProjects}</div>
+      <div className="projets">
+        {" "}
+        <VerticalTimeline>
+          {projects &&
+            projects.map((event) => (
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                date={event.date}
+                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                icon={
+                  <img
+                    src={event.icon}
+                    className="time-icon"
+                    alt={event.techno}
+                  />
+                }
+              >
+                <CardProject key={event.id} {...event} />
+              </VerticalTimelineElement>
+            ))}
+        </VerticalTimeline>
+      </div>
     </section>
   );
 };

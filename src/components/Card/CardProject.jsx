@@ -1,9 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Badge, Button, Card } from "react-bootstrap";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 import "./Card.css";
 
 const CardProject = ({
+  date,
   description,
   fini,
   github,
@@ -29,7 +35,13 @@ const CardProject = ({
               <Badge bg="dark">{project}</Badge>
             </Card.Text>
             <Card.Text>
-              <Badge bg="dark">{technos.toString().split("-")}</Badge>
+              <Badge bg="warning" text="dark">
+                <div className="technos">
+                  {technos.map((techno, i) => (
+                    <div key={i}>{techno}</div>
+                  ))}
+                </div>
+              </Badge>
             </Card.Text>
             <Card.Text>{description.substr(0, 163)}</Card.Text>
             <Button variant="primary">
