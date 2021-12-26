@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Card } from "react-bootstrap";
 import { api } from "../../api/api";
 import CardProject from "../Card/CardProject";
 import "./Project.css";
@@ -19,11 +18,10 @@ const ProjetsWild = () => {
     projects &&
     projects.map((project) => {
       return <CardProject key={project.id} {...project} />;
-      // return <Card key={project.id} {...project} />;
     });
 
   return (
-    <section className>
+    <section>
       Mes travaux à la <h2> Wild Code School</h2>
       <div>
         Voici différents projets que j' ai réalisé en équipe à la Wild Code
