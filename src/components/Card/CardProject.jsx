@@ -29,9 +29,9 @@ const CardProject = ({
               <Badge bg="dark">{project}</Badge>
             </Card.Text>
             <Card.Text>
-              <Badge bg="dark">{technos}</Badge>
+              <Badge bg="dark">{technos.toString().split("-")}</Badge>
             </Card.Text>
-            <Card.Text>{description}</Card.Text>
+            <Card.Text>{description.substr(0, 163)}</Card.Text>
             <Button variant="primary">
               <a
                 className="project-link"
