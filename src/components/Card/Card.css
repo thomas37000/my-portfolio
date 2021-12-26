@@ -1,10 +1,10 @@
 .card-container {
   width: 18rem;
-  height: 450px;
+  display: flex;
+  margin: 0.5rem;
 }
 
 .card {
-  position: relative;
   overflow: hidden;
   width: 33.3%;
   border-radius: 10px;
