@@ -1,24 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Badge } from "react-bootstrap";
 
-export const CardSkills = ({ bg, skill, text }) => {
+export const CardSkills = ({skill }) => {
   return (
-    <div>
-      <Badge bg={bg} text={text}>
+    <>
+      <div>
         {skill}
-      </Badge>
-    </div>
+      </div>
+    </>
   );
 };
 
-export const CardTools = ({ bg, text, tool }) => {
+export const CardTools = ({ tool }) => {
   return (
-    <div>
-      <Badge bg={bg} text={text}>
+    <>
+      <div>
         {tool}
-      </Badge>
-    </div>
+      </div>
+    </>
   );
 };
 

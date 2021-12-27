@@ -9,15 +9,20 @@
   justify-content: center;
 }
 
+.mount-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .items-container {
   padding: 2rem;
   min-height: 200px;
   width: 500px;
 }
 
-.mount,
-.mount2 {
-  margin: 3rem 0;
+.mount, .mount2 {
+  margin: 1rem 0 2rem 1rem;
   width: 200px;
   padding: 0.5rem;
   font-weight: bold;
@@ -25,10 +30,6 @@
   color: #f1f1f1;
   border-radius: 5px;
   border: none;
-}
-
-.mount2 {
-  margin-bottom: 5rem;
 }
 
 .item {
