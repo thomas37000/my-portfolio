@@ -27,6 +27,13 @@ const ProjetsPerso = () => {
   //     return <CardProject key={project.id} {...project} />;
   //   });
 
+  const current = new Date();
+  const today = `${current.getDate()}/${
+    current.getMonth() + 1
+  }/${current.getFullYear()}`;
+  console.log((today));
+
+
   return (
     <section>
       <h2>Mes travaux personnels</h2>

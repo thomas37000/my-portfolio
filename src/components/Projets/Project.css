@@ -29,5 +29,9 @@
     display: grid;
     width: auto;
   }
+  .time-icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
