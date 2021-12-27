@@ -22,10 +22,12 @@ const ProjetsWild = () => {
 
   return (
     <section>
-      Mes travaux à la <h2> Wild Code School</h2>
-      <div>
-        Voici différents projets que j' ai réalisé en équipe à la Wild Code
-        School de Nantes.
+      <div className="bottom-projets">
+        Mes travaux à la <h2> Wild Code School</h2>
+        <div>
+          Voici différents projets que j' ai réalisé en équipe à la Wild Code
+          School de Nantes.
+        </div>
       </div>
       <div className="projets-wild">{fetchJsonProjects}</div>
     </section>

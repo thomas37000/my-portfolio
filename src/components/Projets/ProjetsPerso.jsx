@@ -31,13 +31,15 @@ const ProjetsPerso = () => {
   const today = `${current.getDate()}/${
     current.getMonth() + 1
   }/${current.getFullYear()}`;
-  console.log((today));
-
+  console.log(today);
 
   return (
     <section>
-      <h2>Mes travaux personnels</h2>
-      <div>Voici différents projets que j' ai réalisé dernièrement</div>
+      <div className="header-projets">
+        <h2>Mes travaux personnels</h2>
+        <div>Voici différents projets que j' ai réalisé dernièrement</div>
+      </div>
+
       <div className="projets">
         {" "}
         <VerticalTimeline>

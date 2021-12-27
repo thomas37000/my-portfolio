@@ -6,6 +6,11 @@
   text-decoration: none;
 }
 
+.header-projets,
+.bottom-projets {
+  padding: 2rem;
+}
+
 .projets,
 .projets-wild {
   display: flex;
@@ -34,4 +39,3 @@
     height: 40px;
   }
 }
-

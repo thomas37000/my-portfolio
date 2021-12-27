@@ -1,18 +1,17 @@
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "./components/navbar/Header";
 import ProjetsPerso from "./components/Projets/ProjetsPerso";
 import ProjetsWild from "./components/Projets/ProjetsWild";
-import Contact from "./components/Contact";
+import Mount from "./components/animation/Mount";
+import Header from "./components/navbar/Header";
 import Skills from "./components/skills/Skills";
-import Spring from "./animation/Spring";
+import Contact from "./components/Contact";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Spring />
-      <Skills />
+      <Mount />
       <ProjetsPerso />
       <ProjetsWild />
       <Contact />
