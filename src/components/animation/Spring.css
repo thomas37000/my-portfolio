@@ -9,6 +9,10 @@
   justify-content: center;
 }
 
+.main-mount {
+  background-color: lightgray;
+}
+
 .mount-container {
   display: flex;
   justify-content: center;
@@ -21,7 +25,8 @@
   width: 500px;
 }
 
-.mount, .mount2 {
+.mount,
+.mount2 {
   margin: 1rem 0 2rem 1rem;
   width: 200px;
   padding: 0.5rem;

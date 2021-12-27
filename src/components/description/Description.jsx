@@ -7,15 +7,16 @@ const Description = () => {
   return (
     <div className="desc">
       <div className="desc-box">
-        <img
-          alt="Thomas Chalanson"
-          className="desktopImg"
-          src="https://avatars2.githubusercontent.com/u/31045816?s=460&u=49e074ffd0a6ae0cba98ff5d7ceb6da1649fa542&v=4"
-        />
+        <div className="desc-header">
+          <img
+            alt="Thomas Chalanson"
+            className="desktopImg"
+            src="https://avatars2.githubusercontent.com/u/31045816?s=460&u=49e074ffd0a6ae0cba98ff5d7ceb6da1649fa542&v=4"
+          />
 
-        {/*********** Hello Animation ***********/}
-        <Spring />
-        {/**************************************/}
+          {/*********** Hello Animation ***********/}
+          <Spring />
+        </div>
 
         <div className="description">
           Développeur Web Fullstack Javascript / React j'apprends mon futur

@@ -19,7 +19,7 @@ export default function Filter() {
   });
 
   return (
-    <div onClick={() => toggle(!open)}>
+    <div onClick={() => toggle(!open)} className="hello">
       <animated.svg
         className="svg"
         style={{ scale, opacity }}
