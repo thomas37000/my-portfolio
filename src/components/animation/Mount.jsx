@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { animated, useTransition, useSpring } from "react-spring";
 import { api } from "../../api/api";
 import { CardSkills, CardTools } from "../Card/CardSkills";
-import Description from "../description/Description";
 import "./Spring.css";
 
 export default function Mount() {
@@ -55,7 +54,6 @@ export default function Mount() {
 
   return (
     <div>
-      <Description />
       <div className="main-mount">
         <div className="mount-container">
           <div>click me {"->"} </div>

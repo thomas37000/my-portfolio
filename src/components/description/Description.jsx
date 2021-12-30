@@ -8,11 +8,11 @@ const Description = () => {
     <div className="desc">
       <div className="desc-box">
         <div className="desc-header">
-          <img
+          {/* <img
             alt="Thomas Chalanson"
             className="desktopImg"
             src="https://avatars2.githubusercontent.com/u/31045816?s=460&u=49e074ffd0a6ae0cba98ff5d7ceb6da1649fa542&v=4"
-          />
+          /> */}
 
           {/*********** Hello Animation ***********/}
           <Spring />

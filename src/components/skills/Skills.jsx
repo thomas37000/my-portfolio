@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { HashLink } from "react-router-hash-link";
 import { api } from "../../api/api";
 import scrum from "../../images/scrum.png";
 import sql from "../../images/sql.jpg";
@@ -57,53 +58,55 @@ const Skills = () => {
 
   return (
     <>
-      <section>
-        <div className="column">
-          <figure className="skill">
-            <h2>Front-end Développeur</h2>
-            <Description />
-            <div className="presentation">
-              <h3 className="pink-text">les technos que j'utilise:</h3>
-              <div>Dev Frontend Tools:</div>
-            </div>
+      <HashLink to="/skills">
+        <section>
+          <div className="column">
+            <figure className="skill">
+              <h2>Front-end Développeur</h2>
+              <Description />
+              <div className="presentation">
+                <h3 className="pink-text">les technos que j'utilise:</h3>
+                <div>Dev Frontend Tools:</div>
+              </div>
 
-            <div className="badges">{fetchJsonToolsFrontend}</div>
-            <div className="pink-text">Dev Editors:</div>
-            <div className="badges">{fetchJsonTools}</div>
-          </figure>
-        </div>
-        <div className="column">
-          <figure className="skill">
-            <img src={sql} alt="backend" className="skills-img" />
-            <h2>Back-end Développeur</h2>
-            <p>
-              J'aime créer des requêtes SQL et relier les tables entre elles.
-            </p>
-            <h3 className="pink-text">les technos que j'utlise:</h3>
-            <div className="presentation">
-              <div className="pink-text">Dev Backend Tools:</div>
-            </div>
-            
-            <div className="badges badges2">{fetchJsonToolsBackend}</div>
-          </figure>
-        </div>
-        <div className="column">
-          <figure className="skill">
-            <img src={scrum} alt="frontend" className="skills-img" />
-            <h2>SCRUM</h2>
-            <p>
-              Je travaille avec la méthode Agile Scrum idéale pour le travail en
-              équipe.
-            </p>
+              <div className="badges">{fetchJsonToolsFrontend}</div>
+              <div className="pink-text">Dev Editors:</div>
+              <div className="badges">{fetchJsonTools}</div>
+            </figure>
+          </div>
+          <div className="column">
+            <figure className="skill">
+              <img src={sql} alt="backend" className="skills-img" />
+              <h2>Back-end Développeur</h2>
+              <p>
+                J'aime créer des requêtes SQL et relier les tables entre elles.
+              </p>
+              <h3 className="pink-text">les technos que j'utlise:</h3>
+              <div className="presentation">
+                <div className="pink-text">Dev Backend Tools:</div>
+              </div>
 
-            <div className="badges badges2">{fetchJsonScrum}</div>
-            <div>
-              <h2>Soft Skills</h2>
-              <div className="badges badges2">{fetchJsonSkills}</div>
-            </div>
-          </figure>
-        </div>
-      </section>
+              <div className="badges badges2">{fetchJsonToolsBackend}</div>
+            </figure>
+          </div>
+          <div className="column">
+            <figure className="skill">
+              <img src={scrum} alt="frontend" className="skills-img" />
+              <h2>SCRUM</h2>
+              <p>
+                Je travaille avec la méthode Agile Scrum idéale pour le travail
+                en équipe.
+              </p>
+
+              <div className="badges badges2">{fetchJsonScrum}</div>
+              <div>
+                <h2>Soft Skills</h2>
+                <div className="badges badges2">{fetchJsonSkills}</div>
+              </div>
+            </figure>
+          </div>
+        </section>
+      </HashLink>
     </>
   );
 };

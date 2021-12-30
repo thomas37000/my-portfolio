@@ -4,9 +4,9 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { Badge, Button, Card } from "react-bootstrap";
 import { api } from "../../api/api";
 import CardProject from "../Card/CardProject";
+import ProjetsWild from "./ProjetsWild";
 import "./Project.css";
 
 const ProjetsPerso = () => {
@@ -34,35 +34,41 @@ const ProjetsPerso = () => {
   console.log(today);
 
   return (
-    <section>
-      <div className="header-projets">
-        <h2>Mes travaux personnels</h2>
-        <div>Voici différents projets que j' ai réalisé dernièrement</div>
-      </div>
+    <>
+      <section>
+        <div className="header-projets">
+          <h2>Mes travaux personnels</h2>
+          <div>Voici différents projets que j' ai réalisé dernièrement</div>
+        </div>
 
-      <div className="projets">
-        {" "}
-        <VerticalTimeline>
-          {projects &&
-            projects.map((event) => (
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date={event.date}
-                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-                icon={
-                  <img
-                    src={event.icon}
-                    className="time-icon"
-                    alt={event.techno}
-                  />
-                }
-              >
-                <CardProject key={event.id} {...event} />
-              </VerticalTimelineElement>
-            ))}
-        </VerticalTimeline>
-      </div>
-    </section>
+        <div className="projets">
+          {" "}
+          <VerticalTimeline>
+            {projects &&
+              projects.map((event) => (
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  date={event.date}
+                  iconStyle={{
+                    background: "rgb(33, 150, 243)",
+                    color: "#fff",
+                  }}
+                  icon={
+                    <img
+                      src={event.icon}
+                      className="time-icon"
+                      alt={event.techno}
+                    />
+                  }
+                >
+                  <CardProject key={event.id} {...event} />
+                </VerticalTimelineElement>
+              ))}
+          </VerticalTimeline>
+        </div>
+      </section>
+      <ProjetsWild />
+    </>
   );
 };
 
