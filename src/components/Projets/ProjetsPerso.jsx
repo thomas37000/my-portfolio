@@ -45,7 +45,7 @@ const ProjetsPerso = () => {
           {" "}
           <VerticalTimeline>
             {projects &&
-              projects.map((event) => (
+              projects.map((event, id) => (
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
                   date={event.date}
@@ -60,6 +60,7 @@ const ProjetsPerso = () => {
                       alt={event.techno}
                     />
                   }
+                  key={id}
                 >
                   <CardProject key={event.id} {...event} />
                 </VerticalTimelineElement>
