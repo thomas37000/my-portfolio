@@ -39,13 +39,22 @@
   }
 }
 
+.header-nav,
+.contact-container {
+  margin: 0 -11rem;
+}
+
+.contact-container {
+  display: grid;
+  color: rgb(255 255 255 / 66%);
+  background-color: #212529;
+}
+
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
-  color: rgb(255 255 255 / 66%);
-  background-color: #212529;
 }
 
 .navbar-dark .navbar-nav .nav-link {
