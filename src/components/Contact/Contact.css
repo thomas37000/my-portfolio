@@ -1,0 +1,44 @@
+.contact-container {
+  display: grid;
+  color: rgb(255 255 255 / 66%);
+  background-color: #212529;
+}
+
+.contact,
+.networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin: 2rem 0;
+}
+.contact-container {
+  margin: 0 -11rem;
+}
+
+.btnCv {
+    margin-top: 2rem;
+}
+
+.cv-btn {
+  text-decoration: none;
+}
+
+.networks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.networks a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.networks-logos {
+  width: 50px;
+  height: 50px;
+}
