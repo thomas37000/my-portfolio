@@ -10,6 +10,8 @@
 .bottom-projets {
   padding: 2rem;
   background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 .projets,
@@ -19,12 +21,21 @@
   flex-wrap: wrap;
   padding: 10px;
   background-color: lightgray;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 .time-icon {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+.hr {
+  padding: 0.5rem;
+  margin: -2rem -2rem 2rem -2rem;
+  background: lightgray;
+  color: transparent;
 }
 
 @media only screen and (min-width: 1170px) {

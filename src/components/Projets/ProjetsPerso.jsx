@@ -37,6 +37,7 @@ const ProjetsPerso = () => {
     <>
       <section>
         <div className="header-projets">
+          <div className="hr">transparent</div>
           <h2>Mes travaux personnels</h2>
           <div>Voici différents projets que j' ai réalisé dernièrement</div>
         </div>
