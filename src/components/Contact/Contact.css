@@ -1,7 +1,10 @@
 .contact-container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 -11rem;
   color: rgb(255 255 255 / 66%);
-  background-color: #212529;  
+  background-color: #212529;
 }
 
 .contact,
@@ -12,16 +15,13 @@
   height: 60px;
   margin: 2rem 0;
 }
-.contact-container {
-  margin: 0 -11rem;
-}
 
-.cv  {
+.cv {
   margin: 5rem 0;
 }
 
 .btnCv {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .cv-btn {
@@ -45,4 +45,22 @@
 .networks-logos {
   width: 50px;
   height: 50px;
+}
+
+@media only screen and (max-width: 768px) and (max-width: 1024px) {
+  .contact-container,
+  .cv,
+  .contact {
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+   .contact {
+    margin: 1rem;
+  }
+
+  .footer-logo {
+    margin: 10px;
+    align-items: center;
+  }
 }

@@ -16,16 +16,9 @@ const ProjetsPerso = () => {
     fetch(api)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setProjects(data.perso);
       });
   }, []);
-
-  const current = new Date();
-  const today = `${current.getDate()}/${
-    current.getMonth() + 1
-  }/${current.getFullYear()}`;
-  console.log(today);
 
   return (
     <>

@@ -7,6 +7,20 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <>
+      {/* <footer className="contact-container">
+        <div className="cv">
+          <Button variant="light" className="btnCv">
+            <a className="cv-btn" href={Cv} download={Cv}>
+              téléchargez mon Cv
+            </a>
+          </Button>
+        </div>
+        <div className="contact">
+          Des questions, envoyez moi un email à : thomas.chalanson@gmail.com -
+          tel : 0663802804
+        </div>
+        <Networks />
+      </footer> */}
       <footer className="contact-container">
         <div className="cv">
           <Button variant="light" className="btnCv">
@@ -14,12 +28,12 @@ const Contact = () => {
               téléchargez mon Cv
             </a>
           </Button>
-          {/* <button className="button"></button> */}
         </div>
         <div className="contact">
-          Des questions, envoyez moi un email à : thomas.chalanson@gmail.com -
+          Des questions, envoyez moi un email à thomas.chalanson@gmail.com -
           tel : 0663802804
         </div>
+
         <Networks />
       </footer>
     </>
