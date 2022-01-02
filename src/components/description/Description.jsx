@@ -18,8 +18,9 @@ const Description = () => {
         </div>
 
         <div className="description">
-          Développeur Web Fullstack Javascript / React j'apprends mon futur
-          métier à coder proprement avec
+          Je suis Thomas Chalanson
+          <h1>Développeur Web Fullstack</h1> Javascript / React j'apprends mon
+          futur métier à coder proprement avec
           <Badge bg="primary" className="eslint">
             esLint
           </Badge>
