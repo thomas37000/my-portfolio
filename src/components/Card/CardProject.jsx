@@ -25,19 +25,10 @@ const CardProject = ({
 
           <Card.Body className="card__info">
             <Card.Title>{title}</Card.Title>
-            <Card.Text>
+            <Card.Text component="span">
               {/* faire un ternaire fini ou pas */}
               <Badge bg="danger">{fini}</Badge>
               <Badge bg="dark">{project}</Badge>
-            </Card.Text>
-            <Card.Text>
-              <Badge bg="warning" text="dark">
-                <div className="technos">
-                  {technos.map((techno, i) => (
-                    <div key={i}>{techno}</div>
-                  ))}
-                </div>
-              </Badge>
             </Card.Text>
             <Card.Text>{description.substr(0, 163)}</Card.Text>
             <Button variant="primary">

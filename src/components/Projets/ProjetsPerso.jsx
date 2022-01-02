@@ -21,12 +21,6 @@ const ProjetsPerso = () => {
       });
   }, []);
 
-  // const fetchJsonProjects =
-  //   projects &&
-  //   projects.map((project, index) => {
-  //     return <CardProject key={project.id} {...project} />;
-  //   });
-
   const current = new Date();
   const today = `${current.getDate()}/${
     current.getMonth() + 1
