@@ -91,7 +91,7 @@
       "date": "29 Août 2021",
       "technos": ["Html", "Css", "Javascript", "React", "Typescript"],
       "description": "Récupération de l' Api https://www.themoviedb.org/",
-      "link": "https://cinema-typescript.netlify.app/",
+      "link": null,
       "github": "https://github.com/thomas37000/cinema",
       "image": "https://clairekoga.com/images/react-screencapture.png",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"

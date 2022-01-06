@@ -33,7 +33,7 @@ const Description = () => {
             ce qui m'a permis de développer mon aptitude avec la relation client
             que ce soit avec les distributeurs (magasins physiques ou internet),{" "}
             <div>
-              durand le procédé de production avec l'usine de presse à vinyles
+              durant le procédé de production avec l'usine de presse à vinyles
               et enfin dans la relation de confiance à instaurer avec les
               artistes.
             </div>
