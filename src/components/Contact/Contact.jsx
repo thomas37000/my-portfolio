@@ -10,7 +10,7 @@ const Contact = () => {
       <footer className="contact-container">
         <div className="cv">
           <Button variant="light" className="btnCv">
-            <a className="cv-btn" href={Cv} download={Cv}>
+            <a className="cv-btn" href={Cv} download>
               téléchargez mon Cv
             </a>
           </Button>
