@@ -25,7 +25,7 @@ const ProjetsWild = () => {
       <div className="bottom-projets">
         Mes travaux à la <h2> Wild Code School</h2>
         <div>
-          Voici différents projets que j' ai réalisé en équipe à la Wild Code
+          Voici différents projets que j' ai réalisés en équipe à la Wild Code
           School de Nantes.
         </div>
       </div>
