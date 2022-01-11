@@ -54,7 +54,7 @@
       "fini": "en cours de développement",
       "date": "14 Décembre 2021",
       "technos": ["Html", "Css", "Javascript", "React", "Redux"],
-      "description": "Récupération d' une liste de films avec le module react-paginate pour n'avoir que 3 films affichés et non toute une liste et Redux",
+      "description": "Récupération d' une liste de films avec le module react-paginate pour n'avoir que 3 films affichés et non toute une liste avec Redux",
       "link": "https://movie-list-with-pagination.netlify.app/",
       "github": "https://github.com/thomas37000/react-interview",
       "image": "https://raw.githubusercontent.com/thomas37000/my-portfolio/main/src/images/pagination.png",
@@ -63,7 +63,7 @@
     {
       "id": 2,
       "title": "Wheather app",
-      "fini": "en cours de développement",
+      "fini": null,
       "date": "6 Décembre 2021",
       "technos": ["Html", "Css", "Javascript", "React", "Typescript"],
       "description": "Récupération de l' Api openweathermap",
