@@ -6,6 +6,7 @@ import Contact from "../components/Contact/Contact";
 import Home from "../components/Home";
 import Navbar from "../components/navbar/Navbar";
 import Description from "../components/description/Description";
+import NotFound from "../components/Error";
 
 const Routter = () => {
   return (
@@ -18,6 +19,7 @@ const Routter = () => {
         <Route path="/projets" element={<ProjetsPerso />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cv" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
