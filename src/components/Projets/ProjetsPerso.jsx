@@ -12,13 +12,16 @@ import "./Project.css";
 
 const ProjetsPerso = () => {
   const [projects, setProjects] = useState([]);
-  // console.log(projects);
 
-  const allTechnos = [...projects.map((project) => project.technos)];
-  console.log(allTechnos);
+   // new Set ne map pas les technos en doublons ou plus
+  const allTechnos = [
+    "All",
+    ...new Set(projects.map((project) => project.technos)),
+  ];
+  console.log("technos", allTechnos);
 
-  const [buttons, setButtons] = useState(allTechnos);
-  console.log(buttons);
+  const [buttons] = useState(allTechnos);
+  console.log("1 ?", buttons);
 
   useEffect(() => {
     fetch(api)
@@ -30,10 +33,10 @@ const ProjetsPerso = () => {
 
   //Filter Function
   const filter = (button) => {
-    // if (button === "All") {
-    //   setProjects(projects);
-    //   return;
-    // }
+    if (button === "All") {
+      setProjects(projects);
+      return;
+    }
 
     const filteredData = projects.filter(
       (project) => project.technos === button
