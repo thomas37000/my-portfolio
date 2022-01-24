@@ -14,6 +14,7 @@ const CardProject = ({
   project,
   title,
   technos,
+  projects,
 }) => {
   return (
     <>
@@ -25,6 +26,7 @@ const CardProject = ({
 
           <Card.Body className="card__info">
             <Card.Title>{title}</Card.Title>
+            <Card.Title>{technos}</Card.Title>
             <Card.Text component="span">
               {/* faire un ternaire fini ou pas */}
               <Badge bg="danger">{fini}</Badge>
