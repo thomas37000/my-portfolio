@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import {
   VerticalTimeline,
@@ -12,8 +13,9 @@ import "./Project.css";
 
 const ProjetsPerso = () => {
   const [projects, setProjects] = useState([]);
+  console.log(projects);
 
-   // new Set ne map pas les technos en doublons ou plus
+  // new Set ne map pas les technos en doublons ou plus
   const allTechnos = [
     "All",
     ...new Set(projects.map((project) => project.technos)),
@@ -41,6 +43,7 @@ const ProjetsPerso = () => {
     const filteredData = projects.filter(
       (project) => project.technos === button
     );
+
     setProjects(filteredData);
   };
 
@@ -51,7 +54,7 @@ const ProjetsPerso = () => {
           <div className="hr">transparent</div>
           <h2>Mes travaux personnels</h2>
           <div>Voici différents projets que j' ai réalisés dernièrement</div>
-          <Buttons button={buttons} filter={filter} />
+          {/* <Buttons button={allTechnos} filter={filter} /> */}
         </div>
 
         <div className="projets">
