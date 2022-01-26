@@ -13,17 +13,17 @@ import "./Project.css";
 
 const ProjetsPerso = () => {
   const [projects, setProjects] = useState([]);
-  console.log(projects);
+  console.log("api", projects);
 
   // new Set ne map pas les technos en doublons ou plus
   const allTechnos = [
     "All",
     ...new Set(projects.map((project) => project.technos)),
   ];
-  console.log("technos", allTechnos);
+  console.log("buttons", allTechnos);
 
-  const [buttons] = useState(allTechnos);
-  console.log("1 ?", buttons);
+  const [buttons, setButtons] = useState(allTechnos);
+  console.log("Hook buttons", buttons);
 
   useEffect(() => {
     fetch(api)
@@ -36,9 +36,17 @@ const ProjetsPerso = () => {
   //Filter Function
   const filter = (button) => {
     if (button === "All") {
-      setProjects(projects);
+      const all = setProjects(projects);
+      console.log("onClick All", all);
       return;
     }
+
+    // il ne trouve pas le button === All ?
+    const btnALL = button === "All";
+    const btnReact = button === "React";
+    const btnTs = button === "Typescript";
+    const btnJs = button === "Javascript";
+    console.log("find Buttons", btnALL, btnReact, btnTs, btnJs);
 
     const filteredData = projects.filter(
       (project) => project.technos === button
@@ -54,7 +62,7 @@ const ProjetsPerso = () => {
           <div className="hr">transparent</div>
           <h2>Mes travaux personnels</h2>
           <div>Voici différents projets que j' ai réalisés dernièrement</div>
-          {/* <Buttons button={allTechnos} filter={filter} /> */}
+          <Buttons button={allTechnos} filter={filter} />
         </div>
 
         <div className="projets">
