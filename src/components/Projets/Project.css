@@ -44,6 +44,10 @@
     padding: 1em;
     width: 40%;
   }
+
+  .vertical-timeline-element-date {
+    right: 140% !important;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1169px) {
