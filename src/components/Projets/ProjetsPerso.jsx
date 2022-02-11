@@ -13,17 +13,16 @@ import "./Project.css";
 
 const ProjetsPerso = () => {
   const [projects, setProjects] = useState([]);
-  console.log(projects);
 
   // new Set ne map pas les technos en doublons ou plus
   const allTechnos = [
     "All",
     ...new Set(projects.map((project) => project.technos)),
   ];
-  console.log("technos", allTechnos);
+  // console.log("technos", allTechnos);
 
   const [buttons] = useState(allTechnos);
-  console.log("1 ?", buttons);
+  // console.log("1 ?", buttons);
 
   useEffect(() => {
     fetch(api)
