@@ -15,13 +15,13 @@ const Slideburger = styled.ul`
     text-decoration: none;
     font-weight: 400;
     font-style: normal;
-    color: rgb(255 255 255 / 66%);
+    color: #333;
   }
   a:hover {
     color: #333;
   }
-  li:hover {
-    background: rgb(86, 151, 86);
+  li:hover a:hover {
+    color: #0D6EFD;
   }
   .logoBurger {
     display: none;
