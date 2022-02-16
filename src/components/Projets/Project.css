@@ -38,6 +38,14 @@
   color: transparent;
 }
 
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+
+}
+
 @media only screen and (min-width: 1170px) {
   .vertical-timeline--two-columns .vertical-timeline-element-content {
     margin-left: 0;
@@ -59,12 +67,15 @@
 
 @media only screen and (max-width: 768px) and (max-width: 1024px) {
   .projets,
-  .projets-wild {
+  .projets-wild,  .filter {
     display: grid;
     width: auto;
   }
   .time-icon {
     width: 40px;
     height: 40px;
+  }
+  .filter {
+    margin-top: 1rem;
   }
 }

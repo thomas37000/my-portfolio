@@ -13,29 +13,27 @@ import "./Project.css";
 
 const ProjetsPerso = () => {
   const [projects, setProjects] = useState([]);
+  const [all, setAll] = useState([]);
 
   // new Set ne map pas les technos en doublons ou plus
   const allTechnos = [
     "All",
     ...new Set(projects.map((project) => project.technos)),
   ];
-  // console.log("technos", allTechnos);
-
-  const [buttons] = useState(allTechnos);
-  // console.log("1 ?", buttons);
 
   useEffect(() => {
     fetch(api)
       .then((res) => res.json())
       .then((data) => {
         setProjects(data.perso);
+        setAll(data.perso);
       });
   }, []);
 
   //Filter Function
   const filter = (button) => {
     if (button === "All") {
-      setProjects(projects);
+      setProjects(all);
       return;
     }
 
@@ -53,7 +51,10 @@ const ProjetsPerso = () => {
           <div className="hr">transparent</div>
           <h2>Mes travaux personnels</h2>
           <div>Voici différents projets que j' ai réalisés dernièrement</div>
-          {/* <Buttons button={allTechnos} filter={filter} /> */}
+          <div className="filter">
+            Filtrez les projets par technos :
+            <Buttons button={allTechnos} filter={filter} />
+          </div>
         </div>
 
         <div className="projets">
