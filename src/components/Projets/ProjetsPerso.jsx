@@ -14,6 +14,7 @@ import "./Project.css";
 
 const ProjetsPerso = () => {
   const [selectedOption, setSelectedOption] = useState(null);
+  console.log(selectedOption);
   const [projects, setProjects] = useState([]);
   const [all, setAll] = useState([]);
 
@@ -29,6 +30,7 @@ const ProjetsPerso = () => {
       .then((data) => {
         setProjects(data.perso);
         setAll(data.perso);
+        setSelectedOption(data.perso);
       });
   }, []);
 
@@ -42,8 +44,8 @@ const ProjetsPerso = () => {
     });
 
   //Filter Function
-  const filter = (button) => {
-    if (button === "All") {
+  const filter = (button, selectedOption) => {
+    if (button === "All" || selectedOption === "All") {
       setProjects(all);
       setSelectedOption("All");
       return;
@@ -53,7 +55,12 @@ const ProjetsPerso = () => {
       (project) => project.technos === button
     );
 
+    const selectData = projects.filter(
+      (project) => project.technos === selectedOption
+    );
+
     setProjects(filteredData);
+    setSelectedOption(selectData);
   };
 
   return (
