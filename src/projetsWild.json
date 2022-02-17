@@ -51,7 +51,7 @@
     {
       "id": 1,
       "title": "React Firebase App",
-      "fini": "en cours de développement",
+      "fini": null,
       "date": "17 Janvier 2022",
       "technos": "React",
       "description": "Application avec système d'identification par mail & mot de passe et par la suite avec création d'articles quand on est connecté.",
@@ -75,7 +75,7 @@
     {
       "id": 3,
       "title": "Esn",
-      "fini": "en cours de développement",
+      "fini": null,
       "date": "9 Novembre 2021",
       "technos": "React",
       "description": "Création d'une application Front et Backend pour répértorier toutes les entreprises du Digital en France",
