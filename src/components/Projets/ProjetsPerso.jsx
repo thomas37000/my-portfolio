@@ -9,9 +9,11 @@ import { api } from "../../api/api";
 import CardProject from "../Card/CardProject";
 import ProjetsWild from "./ProjetsWild";
 import Buttons from "../Buttons/Buttons";
+import ReactSelect from "../Buttons/ReactSelect";
 import "./Project.css";
 
 const ProjetsPerso = () => {
+  const [selectedOption, setSelectedOption] = useState(null);
   const [projects, setProjects] = useState([]);
   const [all, setAll] = useState([]);
 
@@ -30,10 +32,20 @@ const ProjetsPerso = () => {
       });
   }, []);
 
+  const options =
+    projects &&
+    projects.map((project) => {
+      return {
+        value: project.id,
+        label: project.technos,
+      };
+    });
+
   //Filter Function
   const filter = (button) => {
     if (button === "All") {
       setProjects(all);
+      setSelectedOption("All");
       return;
     }
 
@@ -53,6 +65,11 @@ const ProjetsPerso = () => {
           <div>Voici différents projets que j' ai réalisés dernièrement</div>
           <div className="filter">
             Filtrez les projets par technos :
+            <ReactSelect
+              filter={filter}
+              options={options}
+              selectedOption={selectedOption}
+            />
             <Buttons button={allTechnos} filter={filter} />
           </div>
         </div>
