@@ -5,6 +5,7 @@ import "react-vertical-timeline-component/style.min.css";
 import "./Card.css";
 
 const CardProject = ({
+  backend,
   date,
   description,
   fini,
@@ -30,8 +31,9 @@ const CardProject = ({
               {/* faire un ternaire fini ou pas */}
               <Badge bg="danger">{fini}</Badge>
               <Badge bg="dark">{project}</Badge>
+              <Badge bg="dark">{backend}</Badge>
             </Card.Text>
-            <Card.Text>{description.substr(0, 163)}</Card.Text>
+            <Card.Text>{description}</Card.Text>
             <Button variant="primary">
               <a
                 className="project-link"
