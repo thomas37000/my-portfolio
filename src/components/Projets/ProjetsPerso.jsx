@@ -13,27 +13,27 @@ import ButtonsBackend from "../Buttons/ButtonsBackend";
 import "./Project.css";
 
 const ProjetsPerso = () => {
+  // ---------------------------------------------------------------------------
+  // STATES
+  // ---------------------------------------------------------------------------
   const [projects, setProjects] = useState([]);
   const [all, setAll] = useState([]);
 
+  // ---------------------------------------------------------------------------
   // new Set ne map pas les technos en doublons ou plus
+  // ---------------------------------------------------------------------------
   const allTechnos = [
     "All",
     ...new Set(projects.map((project) => project.technos)),
   ];
 
   const allStacks = [...new Set(projects.map((project) => project.backend))];
+  console.log("back", allStacks);
+  const removeIndexBackend = allStacks.splice(1, 1);
 
-  useEffect(() => {
-    fetch(api)
-      .then((res) => res.json())
-      .then((data) => {
-        setProjects(data.perso);
-        setAll(data.perso);
-      });
-  }, []);
-
-  //Filter Function
+  // ---------------------------------------------------------------------------
+  // Filter Function
+  // ---------------------------------------------------------------------------
   const filter = (button) => {
     if (button === "All") {
       setProjects(all);
@@ -59,6 +59,19 @@ const ProjetsPerso = () => {
 
     setProjects(filteredData);
   };
+
+  // ---------------------------------------------------------------------------
+  // LIFE CYCLE
+  // ---------------------------------------------------------------------------
+
+  useEffect(() => {
+    fetch(api)
+      .then((res) => res.json())
+      .then((data) => {
+        setProjects(data.perso);
+        setAll(data.perso);
+      });
+  }, []);
 
   return (
     <>
