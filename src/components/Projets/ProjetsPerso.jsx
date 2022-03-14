@@ -9,6 +9,7 @@ import { api } from "../../api/api";
 import CardProject from "../Card/CardProject";
 import ProjetsWild from "./ProjetsWild";
 import Buttons from "../Buttons/Buttons";
+import ButtonsBackend from "../Buttons/ButtonsBackend";
 import "./Project.css";
 
 const ProjetsPerso = () => {
@@ -20,6 +21,8 @@ const ProjetsPerso = () => {
     "All",
     ...new Set(projects.map((project) => project.technos)),
   ];
+
+  const allStacks = [...new Set(projects.map((project) => project.backend))];
 
   useEffect(() => {
     fetch(api)
@@ -44,6 +47,19 @@ const ProjetsPerso = () => {
     setProjects(filteredData);
   };
 
+  const filterBackend = (button) => {
+    if (button === "All") {
+      setProjects(all);
+      return;
+    }
+
+    const filteredData = projects.filter(
+      (project) => project.backend === button
+    );
+
+    setProjects(filteredData);
+  };
+
   return (
     <>
       <section>
@@ -54,6 +70,10 @@ const ProjetsPerso = () => {
           <div className="filter">
             Filtrez les projets par technos :
             <Buttons button={allTechnos} filter={filter} />
+          </div>
+          <div className="filter">
+            Projets Backend :
+            <ButtonsBackend button={allStacks} filter={filterBackend} />
           </div>
         </div>
 

@@ -31,7 +31,7 @@ const CardProject = ({
               {/* faire un ternaire fini ou pas */}
               <Badge bg="danger">{fini}</Badge>
               <Badge bg="dark">{project}</Badge>
-              <Badge bg="dark">{backend}</Badge>
+              <Badge bg="success">{backend}</Badge>
             </Card.Text>
             <Card.Text>{description}</Card.Text>
             <Button variant="primary">
