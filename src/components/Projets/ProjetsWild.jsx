@@ -6,6 +6,9 @@ import "./Project.css";
 const ProjetsWild = () => {
   const [projects, setProjects] = useState([]);
 
+  // ---------------------------------------------------------------------------
+  // LIFE CYCLE
+  // ---------------------------------------------------------------------------
   useEffect(() => {
     fetch(api)
       .then((res) => res.json())

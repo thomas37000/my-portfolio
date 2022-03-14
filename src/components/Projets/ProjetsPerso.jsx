@@ -28,7 +28,6 @@ const ProjetsPerso = () => {
   ];
 
   const allStacks = [...new Set(projects.map((project) => project.backend))];
-  console.log("back", allStacks);
   const removeIndexBackend = allStacks.splice(1, 1);
 
   // ---------------------------------------------------------------------------
@@ -63,7 +62,6 @@ const ProjetsPerso = () => {
   // ---------------------------------------------------------------------------
   // LIFE CYCLE
   // ---------------------------------------------------------------------------
-
   useEffect(() => {
     fetch(api)
       .then((res) => res.json())

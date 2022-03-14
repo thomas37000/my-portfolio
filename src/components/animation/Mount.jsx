@@ -6,6 +6,9 @@ import backend from "../../images/backend-nuage-de-mots.webp";
 import "./Spring.css";
 
 export default function Mount() {
+  // ---------------------------------------------------------------------------
+  // STATES
+  // ---------------------------------------------------------------------------
   const [show, setShow] = useState(false);
   const [greetingStatus, displayGreeting] = useState(false);
 

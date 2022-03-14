@@ -8,12 +8,18 @@ import Description from "../description/Description";
 import "./Skills.css";
 
 const Skills = () => {
+  // ---------------------------------------------------------------------------
+  // STATES
+  // ---------------------------------------------------------------------------
   const [skills, setSkills] = useState([]);
   const [tools, setTools] = useState([]);
   const [back, setBack] = useState([]);
   const [agile, setAgile] = useState([]);
   const [front, setFront] = useState([]);
 
+  // ---------------------------------------------------------------------------
+  // LIFE CYCLE
+  // ---------------------------------------------------------------------------
   useEffect(() => {
     fetch(api)
       .then((res) => res.json())
