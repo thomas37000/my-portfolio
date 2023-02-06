@@ -50,7 +50,7 @@
   "perso": [
     {
       "id": 1,
-      "backend": "null",
+      "backend": null,
       "title": "News Blog",
       "fini": null,
       "date": "6 Février 2023",
