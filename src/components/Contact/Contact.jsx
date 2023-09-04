@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import Cv from '../../cv/thomas-chalanson-cv.pdf';
+import Cv from '../../cv/Thomas Chalanson Cv.pdf';
 import CvAlternance from '../../cv/thomas-chalanson-cv-alternance.pdf';
 import Networks from '../Networks';
 import './Contact.css';
