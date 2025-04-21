@@ -1,16 +1,17 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { api } from "../../api/api";
-import CardProject from "../Card/CardProject";
-import ProjetsWild from "./ProjetsWild";
-import Buttons from "../Buttons/Buttons";
-import ButtonsBackend from "../Buttons/ButtonsBackend";
-import "./Project.css";
+} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { api } from '../../api/api';
+import CardProject from '../Card/CardProject';
+import ProjetsWild from './ProjetsWild';
+import Buttons from '../Buttons/Buttons';
+import ButtonsBackend from '../Buttons/ButtonsBackend';
+import ButtonNocode from '../Buttons/ButtonNocode';
+import './Project.css';
 
 const ProjetsPerso = () => {
   // ---------------------------------------------------------------------------
@@ -23,7 +24,7 @@ const ProjetsPerso = () => {
   // new Set ne map pas les technos en doublons ou plus
   // ---------------------------------------------------------------------------
   const allTechnos = [
-    "All",
+    'All',
     ...new Set(projects.map((project) => project.technos)),
   ];
 
@@ -34,7 +35,7 @@ const ProjetsPerso = () => {
   // Filter Function
   // ---------------------------------------------------------------------------
   const filter = (button) => {
-    if (button === "All") {
+    if (button === 'All') {
       setProjects(all);
       return;
     }
@@ -47,7 +48,7 @@ const ProjetsPerso = () => {
   };
 
   const filterBackend = (button) => {
-    if (button === "All") {
+    if (button === 'All') {
       setProjects(all);
       return;
     }
@@ -74,36 +75,40 @@ const ProjetsPerso = () => {
   return (
     <>
       <section>
-        <div className="header-projets">
-          <div className="hr">transparent</div>
+        <div className='header-projets'>
+          <div className='hr'>transparent</div>
           <h2>Mes travaux personnels</h2>
           <div>Voici différents projets que j' ai réalisés dernièrement</div>
-          <div className="filter">
+          <div className='filter'>
             Filtrez les projets par technos :
             <Buttons button={allTechnos} filter={filter} />
           </div>
-          <div className="filter">
+          <div className='filter'>
             Projets Backend :
             <ButtonsBackend button={allStacks} filter={filterBackend} />
           </div>
+          <div className='filter'>
+            Projets Nocode & Lowcode :
+            <ButtonNocode />
+          </div>
         </div>
 
-        <div className="projets">
-          {" "}
+        <div className='projets'>
+          {' '}
           <VerticalTimeline>
             {projects &&
               projects.map((event, id) => (
                 <VerticalTimelineElement
-                  className="vertical-timeline-element--work"
+                  className='vertical-timeline-element--work'
                   date={event.date}
                   iconStyle={{
-                    background: "rgb(33, 150, 243)",
-                    color: "#fff",
+                    background: 'rgb(33, 150, 243)',
+                    color: '#fff',
                   }}
                   icon={
                     <img
                       src={event.icon}
-                      className="time-icon"
+                      className='time-icon'
                       alt={event.techno}
                     />
                   }

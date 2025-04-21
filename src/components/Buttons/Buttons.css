@@ -4,7 +4,8 @@
 }
 
 .btn-technos,
-.btn-stacks {
+.btn-stacks,
+.btn-nocode {
   padding: 0.5rem 2rem;
   border: none;
   font-family: inherit;
@@ -23,6 +24,11 @@
   background-color: #1e90ff;
 }
 
+.btn-nocode {
+  background-color: #ff9900;
+  color: #000000;
+}
+
 .btn-technos:not(:last-child),
 .btn-stacks:not(:last-child) {
   margin-right: 1rem;
@@ -35,6 +41,11 @@
 
 .btn-stacks:hover {
   background-color: #0c3564;
+  cursor: pointer;
+}
+
+.btn-nocode:hover {
+  background-color: tomato;
   cursor: pointer;
 }
 
